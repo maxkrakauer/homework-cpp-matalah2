@@ -40,6 +40,8 @@ class Tree {
     int contains(int i);
 
     int root(){
+      if (_root==NULL)
+      throw "no root";
       return _root->getValue();
     }
 
