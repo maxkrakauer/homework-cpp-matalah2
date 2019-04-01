@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <iostream>
 
-using namespace std;
+ using namespace std;
 
 
 

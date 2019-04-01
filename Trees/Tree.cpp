@@ -6,12 +6,11 @@
 #include <iostream>
 #include <string> 
 
-using namespace std;
+   using namespace std;
 
 
 
 void Tree::insert(int value){
-    cout<<"insert method started"<<"\n";
     Node* y = NULL;
     Node* x = _root;
     Node* z = new Node(value);
@@ -41,7 +40,6 @@ void Tree::insert(int value){
 
 
 void Tree::transplant(Node* u, Node* v){
-    cout<<"transplant method started"<<"\n";
     if(u->getParent()==NULL)
     _root=v;
     else if(u==u->getParent()->getLeft())
@@ -53,7 +51,6 @@ void Tree::transplant(Node* u, Node* v){
 }
 
 Node* Tree::findNode(int i){
-      cout<<"findnode method started"<<"\n";
       Node* temp = _root;
       while(temp!=NULL && temp->getValue()!=i){
           if(temp->getValue()>i)
@@ -66,7 +63,6 @@ Node* Tree::findNode(int i){
 
 
 void Tree::remove(int i){
-    cout<<"remove method started"<<"\n";
     Node* z = findNode(i);
     if(z!=NULL){
     _size--;
@@ -92,7 +88,6 @@ void Tree::remove(int i){
 }
 
 int Tree::parent(int i){
-    cout<<"parent method started"<<"\n";
     Node* x = findNode(i);
     if(x==NULL)
     throw "No node with that value";
@@ -104,7 +99,6 @@ int Tree::parent(int i){
 }
 
 int Tree::left(int i){
-    cout<<"left method started"<<"\n";
     Node* x = findNode(i);
     if(x==NULL)
     throw "No node with that value";
@@ -117,7 +111,6 @@ int Tree::left(int i){
 
 
 int Tree::right(int i){
-    cout<<"right method started"<<"\n";
     Node* x = findNode(i);
     if(x==NULL)
     throw "No node with that value";
@@ -130,13 +123,11 @@ int Tree::right(int i){
 
 
 int Tree::size(){
-    cout<<"size method started"<<"\n";
     print2D(_root);
     return _size;
 }
 
 int Tree::contains(int i){
-    cout<<"contains method started"<<"\n";
     print2D(_root);
     Node* x = findNode(i);
     if(x==NULL)
@@ -145,7 +136,6 @@ int Tree::contains(int i){
 }
 
 string Tree::print(){
-    cout<<"print method started"<<"\n";
     string str="";
     if(_root!=NULL)
     return _root->print(str);
