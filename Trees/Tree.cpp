@@ -8,7 +8,7 @@
 
    using namespace std;
 
-
+using namespace ariel;
 
 void Tree::insert(int value){
     Node* y = NULL;
@@ -82,6 +82,7 @@ void Tree::remove(int i){
         y->getLeft()->setParent(y);
     }
     z->remove();
+    z = NULL;
     }
     else throw "no such number";
     print2D(_root);

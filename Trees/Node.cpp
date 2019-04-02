@@ -43,7 +43,7 @@ string Node::to_string(){
 string Node::print(string str){
     Node*x = this;
     if(x==NULL)
-    throw "no node and therefore cannot print";
+    throw "no node and therefore cannot print!";
     if(this->getLeft()!=NULL)
     str=str+this->getLeft()->print(str);
     if(this->getRight()!=NULL)
@@ -55,11 +55,11 @@ string Node::print(string str){
 
 
 void Node::remove(){
-    free(this);
-}
+    delete(this);
+ }
 
 
-Node*  Node::minimum(){
+Node* Node::minimum(){
     Node* x = this;
     if (x==NULL)
     throw "no node and therefore no minimum";
@@ -67,9 +67,6 @@ Node*  Node::minimum(){
     x=(*x).getLeft();
     return x;
 }
-
-
-
 
 
 

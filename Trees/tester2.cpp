@@ -10,17 +10,18 @@ using std::cout, std::endl;
 #include "badkan.hpp"
 #include "Tree.hpp"
 
+
 int main() {
   
 
-  Tree myTree1;
-  Tree myTree2;
-  Tree myTree3;
-  Tree myTree4;
-  Tree myTree5;
-  Tree myTree6;
-  Tree myTree7;
-  Tree myTree8;  
+  ariel::Tree myTree1;
+  ariel::Tree myTree2;
+  ariel::Tree myTree3;
+  ariel::Tree myTree4;
+  ariel::Tree myTree5;
+  ariel::Tree myTree6;
+  ariel::Tree myTree7;
+  ariel::Tree myTree8;  
 
   badkan::TestCase tc("Binary tree");
   tc

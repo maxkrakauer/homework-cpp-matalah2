@@ -1,13 +1,12 @@
 #!make -f
 
 
-mytest: tester2.o Tree.o Node.o
-	clang++-6.0 -std=c++17 $^ -o mytest
+
 
 demo: TreeTest.o Tree.o Node.o
 	clang++-6.0 -std=c++17 $^ -o demo
 
-test: test1.o Tree.o Node.o
+test: tester2.o Tree.o Node.o
 	clang++-6.0 -std=c++17 $^ -o test
 
 %.o: %.cpp

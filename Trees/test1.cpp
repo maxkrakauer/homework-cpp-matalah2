@@ -11,13 +11,13 @@ using std::cout, std::endl;
 #include "Tree.hpp"
 
 int main() {
-  Tree emptytree;
-  Tree threetree;  
+  ariel::Tree emptytree;
+  ariel::Tree threetree;  
   threetree.insert(5);
   threetree.insert(7);
   threetree.insert(3);
   
-  Tree mytree;  
+  ariel::Tree mytree;  
 
   badkan::TestCase tc("Binary tree");
   tc
